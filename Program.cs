@@ -6,11 +6,14 @@ namespace Learning
     {
         public static void Main(string[] args)
         {
-            Console.WriteLine("---------1-------");
-            Lesson3 lesson3 = new Lesson3();
+            //Для перевірки завдання приберіть коментар з потрібного номеру уроку
+            /*  Console.WriteLine("---------1-------");
             lesson3.RunLesson3();
             Console.WriteLine("---------2-------");
             Lesson4.RunLesson4();
+            Console.WriteLine("---------3.1-------");
+            Lesson5.RunLesson5();
+            Lesson5.RunLesson51();*/
         }
     }
 }

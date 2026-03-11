@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace Learning
 {
-    public class Lesson3
+    public static class Lesson3
     {
-        public void RunLesson3()
+        public static void RunLesson3()
         {
             int number = 10;
             Console.WriteLine($"Number 1: {number}");
