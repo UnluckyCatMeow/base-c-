@@ -30,7 +30,7 @@ namespace Learning
             }
         }
 
-        public static void RunLesson51()
+        public static void RunLesson52()
         {
             Console.Write("Enter login: ");
             string role = Console.ReadLine();
