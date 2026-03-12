@@ -20,7 +20,15 @@ namespace Learning
 
             //Lesson7.RunLesson7();
 
-            Lesson8.RunLesson8();
+            //Lesson8.RunLesson8();
+
+            //Lesson9.RunLesson9();
+
+            /*Lesson10.RunLesson10("Повтор методiв");
+            string words = "Summ:";
+            Lesson10.RunLesson10(words);
+            int result = Lesson10.RunLesson10_1(3, 7);
+            Lesson10.RunLesson10(result.ToString());*/
         }
     }
 }

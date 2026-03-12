@@ -53,7 +53,7 @@ namespace Learning
             Console.WriteLine(symbols[0, 0]);
 
             int[,] number =
-            {
+            { 
                 {5, 7},
                 {8, 9},
                 {90, 3}
