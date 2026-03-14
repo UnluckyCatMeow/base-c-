@@ -1,4 +1,5 @@
 ﻿using System;
+using System.IO;
 
 namespace Learning
 {
@@ -29,6 +30,12 @@ namespace Learning
             Lesson10.RunLesson10(words);
             int result = Lesson10.RunLesson10_1(3, 7);
             Lesson10.RunLesson10(result.ToString());*/
+
+            //Lesson10.RunLesson10_2();
+
+            //Lesson11.RunLesson11();
+
+            Lesson12.RunLesson12();
         }
     }
 }
