@@ -35,7 +35,16 @@ namespace Learning
 
             //Lesson11.RunLesson11();
 
-            Lesson12.RunLesson12();
+            //Lesson12.RunLesson12();
+
+            Lesson14 bot = new Lesson14();
+            bot.setValues("Bot", 3, new byte[] { 0, 0, 0 });
+
+            Lesson14 killer = new Lesson14();
+            killer.setValues("Killer", 7, new byte[] { 0, 1, 0 });
+
+            bot.printValues();
+            killer.printValues();
         }
     }
 }
