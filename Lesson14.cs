@@ -13,20 +13,42 @@ namespace Learning
         private string name;
         private short weight;
         private byte[] coordinates;
-        public void setValues(string _name, short _weight, byte[] _coordinates)
+        public static int count = 0;
+
+        public Lesson14()
+        {
+            count++;
+        }
+        public Lesson14(string _name)
         {
             name = _name;
-            weight = _weight;
-            coordinates = _coordinates;
+            count++;
+        }
+        public Lesson14(string _name, short _weight, byte[] _coordinates)
+        {
+            setValues(_name, _weight, _coordinates);
+            printValues();
+            count++;
+        }
+        public void setValues(string name, short weight, byte[] coordinates)
+        {
+            this.name = name;
+            this.weight = weight;
+            this.coordinates = coordinates;
         }
         public void printValues()
         {
-            Console.WriteLine($"{name}, weight: {weight}, coordinates: "); //coordinates масив, тому щоб вивести треба його перебрати
+            Console.Write($"{name}, weight: {weight}, coordinates: "); //coordinates масив, тому щоб вивести треба його перебрати
             foreach (byte el in coordinates)
             {
-                Console.Write($"{el} - ");
+                Console.Write($"{el} ");
             }
             Console.WriteLine("");
         }
+        public static void Print()
+        {
+            Console.WriteLine("Count: " + count);
+        }
     }
 }
+//Console.WriteLine(people.Substring(0, people.Length - 3));//обрізаєм 3 останні символи
