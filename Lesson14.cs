@@ -10,10 +10,35 @@ namespace Learning
     public class Lesson14
     {
 
-        private string name;
-        private short weight;
-        private byte[] coordinates;
+        protected string name;
+        protected short weight;
+        protected byte[] coordinates;
         public static int count = 0;
+        public string Name
+        {
+            get
+            {
+                return name;
+            }
+            private set;
+        }
+        public short Weight
+        {
+            get
+            {
+                Console.Write("Result: ");
+                return this.weight;
+            }
+            set
+            {
+                if (value < 1)
+                    weight = 0;
+                else
+                    this.weight = value; //value вбудоване, передається коли ми встановлюємо самі потім в програмі це в аксесор
+            }//i this тут необовязкове
+
+        }
+        public int Width { get; set; }
 
         public Lesson14()
         {
